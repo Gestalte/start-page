@@ -1,0 +1,60 @@
+body, html {    
+    font-family: Helvetica, sans-serif;    
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    background-image: url("src/images/1623360515897.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%; 
+}
+
+.flex-container  {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1000px) {
+    .flex-container {
+      flex-direction: column;
+      flex:100%;
+    }
+  }
+
+h1 {
+    color:#555;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.outline {
+    border: 2px solid #333;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(241, 241, 241, 0.6);
+    flex: 20%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} 
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
