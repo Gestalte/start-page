@@ -17,61 +17,66 @@ main =
         }
 
 type alias LinkBlock = 
-    { links : List (String, String)
+    { linkColumns : List (List (String, String))
     , title : String 
     }
 
 general : LinkBlock
 general =
-    { links = 
-        [ ("https://schedule.hololive.tv/lives", "Hololive")
-        , ("https://www.youtube.com/", "Youtube")
-        , ("https://cryptowat.ch/charts/LUNO:BTC-ZAR?period=1d", "Crypto Watch")
-        , ("https://news.ycombinator.com/news", "Hacker News")
-        , ("https://mail.google.com", "Gmail")
-        , ("https://keep.google.com", "Keep")
-        , ("https://calendar.google.com", "Calendar")
+    { linkColumns = 
+        [ [ ("https://schedule.hololive.tv/lives", "Hololive")
+            , ("https://www.youtube.com/", "Youtube")
+            , ("https://cryptowat.ch/charts/LUNO:BTC-ZAR?period=1d", "Crypto Watch")
+            , ("https://mail.google.com", "Gmail")
+            ]
+        , [ ("https://keep.google.com", "Keep")
+            , ("https://calendar.google.com", "Calendar")
+            , ("https://loot.co.za/", "Loot")
+            , ("https://takealot.com/", "Takealot")
+            ]
         ]
     , title = "General"
     }
 
 programming : LinkBlock
 programming =
-    { links = 
-        [ ("https://github.com/Gestalte", "Github")
+    { linkColumns = 
+        [[ ("https://github.com/Gestalte", "Github")
+        , ("https://news.ycombinator.com/news", "Hacker News")
+        , ("https://lobste.rs/", "lobste.rs")
         , ("https://app.pluralsight.com/profile", "Pluralsight")
         , ("https://portal.azure.com/#home", "Azure")
         , ("https://www.w3schools.com/default.asp", "W3 Schools")
-        ]
+        ]]
     , title = "Programming"
     }
 
 boards : LinkBlock
 boards = 
-    { links = 
-        [ ("https://boards.4channel.org/vt/", "/vt/")
+    { linkColumns = 
+        [[ ("https://boards.4channel.org/vt/", "/vt/")
         , ("https://boards.4channel.org/vg/", "/vg/")
         , ("https://boards.4channel.org/vg/catalog#s=milsim", "/milsim/")
         , ("https://boards.4channel.org/out/", "/out/")
-        ]
+        ]]
     , title = "Boards"
     }
 
 translate : LinkBlock
 translate = 
-    { links = 
-        [ ("https://www.deepl.com/translator#ja/en", "DeepL")
+    { linkColumns = 
+        [[ ("https://www.deepl.com/translator#ja/en", "DeepL")
         , ("https://translate.google.com/?sl=ja&tl=en", "Google Translate")
-        ]
+        ]]
     , title = "Translate"
     }
 
 torrents : LinkBlock
 torrents =
-    { links = 
-        [ ("https://nyaa.si", "Nyaa")
+    { linkColumns = 
+        [[ ("https://nyaa.si", "Nyaa")
         , ("https://thepiratebay.org/index.html", "Piratebay")
-        ]
+        ]]
     , title = "Torrents"
     }
 
@@ -81,14 +86,20 @@ makeLink (link, txt) =
         [ a [href link] [text txt]]
     ]
 
-makeBlock : { a | title : String, links : List (String, String) } -> Html msg
+makeBlock : { a | title : String, linkColumns : List ( List (String, String)) } -> Html msg
 makeBlock model =
     div [ class "outline" ] 
         [ h1 [] [text model.title]
-        , ul [] (List.concat (List.map makeLink model.links))            
+        , div [ class "flex-container"]  
+            (List.map (\ links -> makeColumn links) model.linkColumns )
         ]
 
-
+makeColumn : List (String, String) -> Html msg
+makeColumn links =
+    div []
+        [ 
+            ul [] (List.concat (List.map makeLink links))
+        ]
 
 type alias Model =
     { zone : Time.Zone
@@ -102,7 +113,7 @@ init _ =
     )
 
 subscriptions : a -> Sub Msg
-subscriptions model =
+subscriptions _ =
     Time.every 1000 Tick
 
 leadingZero: String -> String
@@ -167,21 +178,18 @@ view model =
         month = toMonth model.zone model.time
         year = String.fromInt (toYear model.zone model.time)
     in
-    div [class "bg"]
-        [ div 
-            [ style "margin-left" "20px"
-            , style "padding-top" "10px"
-            ] 
-            [ text (hour ++ ":" ++ minute ++ ":" ++ second ++ " " ++ year ++ "年" ++ toJapaneseMonthCounter month ++ day ++ "日") ]
-        , div [style "margin-left" "20px"] [ text (toJapaneseWeekday weekday) ]
-        , div [style "margin-left" "20px"] [ text (toJapaneseMonth month) ]
-        , div [ class "flex-container" ]
+    div [ class "bg" ]
+        [ div [ class "flex-container" ]
             [ makeBlock general
             , makeBlock programming
             , makeBlock boards
             , makeBlock translate
             , makeBlock torrents
             ]
+        , div [ class "timeblocks" ] 
+            [ text (hour ++ ":" ++ minute ++ ":" ++ second ++ " " ++ year ++ "年" ++ toJapaneseMonthCounter month ++ day ++ "日") ]
+        , div [ class "timeblocks" ] [ text (toJapaneseWeekday weekday) ]
+        , div [ class "timeblocks" ] [ text (toJapaneseMonth month) ]
         ]
 
 type Msg
