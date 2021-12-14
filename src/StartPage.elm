@@ -24,7 +24,8 @@ type alias LinkBlock =
 general : LinkBlock
 general =
     { linkColumns = 
-        [ [ ("https://schedule.hololive.tv/lives", "Hololive")
+        [ [ 
+            ("https://schedule.hololive.tv/lives", "Hololive")
             , ("https://www.youtube.com/", "Youtube")
             , ("https://cryptowat.ch/charts/LUNO:BTC-ZAR?period=1d", "Crypto Watch")
             , ("https://mail.google.com", "Gmail")
@@ -41,20 +42,26 @@ general =
 programming : LinkBlock
 programming =
     { linkColumns = 
-        [[ ("https://github.com/Gestalte", "Github")
-        , ("https://news.ycombinator.com/news", "Hacker News")
-        , ("https://lobste.rs/", "lobste.rs")
-        , ("https://app.pluralsight.com/profile", "Pluralsight")
-        , ("https://portal.azure.com/#home", "Azure")
-        , ("https://www.w3schools.com/default.asp", "W3 Schools")
-        ]]
+        [   [ 
+            ("https://github.com/Gestalte", "Github")
+            , ("https://community.bistudio.com/wiki/Category:Arma_3:_Scripting_Commands","BIKI")
+            , ("https://app.pluralsight.com/profile", "Pluralsight")
+            , ("https://www.w3schools.com/default.asp", "W3 Schools")            
+            ]
+        ,   [("https://news.ycombinator.com/news", "Hacker News")
+            , ("https://lobste.rs/", "lobste.rs")
+            , ("https://portal.azure.com/#home", "Azure")
+            , ("https://console.cloud.google.com","Google Cloud")
+            ]
+        ]
     , title = "Programming"
     }
 
 boards : LinkBlock
 boards = 
     { linkColumns = 
-        [[ ("https://boards.4channel.org/vt/", "/vt/")
+        [[ ("https://boards.4channel.org/v/", "/v/")
+        , ("https://boards.4channel.org/vt/", "/vt/")
         , ("https://boards.4channel.org/vg/", "/vg/")
         , ("https://boards.4channel.org/vg/catalog#s=milsim", "/milsim/")
         , ("https://boards.4channel.org/out/", "/out/")
@@ -71,13 +78,14 @@ translate =
     , title = "Translate"
     }
 
-torrents : LinkBlock
-torrents =
+downloads : LinkBlock
+downloads =
     { linkColumns = 
         [[ ("https://nyaa.si", "Nyaa")
         , ("https://thepiratebay.org/index.html", "Piratebay")
+        , ("https://za1lib.org/","Z-Library")
         ]]
-    , title = "Torrents"
+    , title = "Downloads"
     }
 
 makeLink : (String, String) -> List (Html msg)
@@ -184,7 +192,7 @@ view model =
             , makeBlock programming
             , makeBlock boards
             , makeBlock translate
-            , makeBlock torrents
+            , makeBlock downloads
             ]
         , div [ class "timeblocks" ] 
             [ text (hour ++ ":" ++ minute ++ ":" ++ second ++ " " ++ year ++ "年" ++ toJapaneseMonthCounter month ++ day ++ "日") ]
