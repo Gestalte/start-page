@@ -64,6 +64,7 @@ boards =
         , ("https://boards.4channel.org/vt/", "/vt/")
         , ("https://boards.4channel.org/vg/", "/vg/")
         , ("https://boards.4channel.org/vg/catalog#s=milsim", "/milsim/")
+        , ("https://boards.4channel.org/vg/catalog#s=agdg","/agdg/")
         , ("https://boards.4channel.org/out/", "/out/")
         ]]
     , title = "Boards"
