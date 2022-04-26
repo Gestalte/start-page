@@ -24,13 +24,14 @@ type alias LinkBlock =
 general : LinkBlock
 general =
     { linkColumns = 
-        [ [ 
-            ("https://schedule.hololive.tv/lives", "Hololive")
-            , ("https://www.youtube.com/", "Youtube")
+        [ [ ("https://schedule.hololive.tv/lives", "Hololive")
+            , ("https://holodex.net/", "HoloDex")
+            , ("https://music.holodex.net/", "MusicDex")
             , ("https://cryptowat.ch/charts/LUNO:BTC-ZAR?period=1d", "Crypto Watch")
             , ("https://mail.google.com", "Gmail")
             ]
-        , [ ("https://keep.google.com", "Keep")
+        , [ ("https://www.youtube.com/", "Youtube")
+            , ("https://keep.google.com", "Keep")            
             , ("https://calendar.google.com", "Calendar")
             , ("https://loot.co.za/", "Loot")
             , ("https://takealot.com/", "Takealot")
