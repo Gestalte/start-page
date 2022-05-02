@@ -31,7 +31,7 @@ general =
             , ("https://mail.google.com", "Gmail")
             ]
         , [ ("https://www.youtube.com/", "Youtube")
-            , ("https://keep.google.com", "Keep")            
+            , ("twitch.tv/", "Twitch")            
             , ("https://calendar.google.com", "Calendar")
             , ("https://loot.co.za/", "Loot")
             , ("https://takealot.com/", "Takealot")
@@ -76,6 +76,8 @@ translate =
     { linkColumns = 
         [[ ("https://www.deepl.com/translator#ja/en", "DeepL")
         , ("https://translate.google.com/?sl=ja&tl=en", "Google Translate")
+        , ("https://conjugator.reverso.net/conjugation-japanese.html", "Reverso Conjugator")
+        , ("https://jisho.org/", "Jisho Dictionary")
         ]]
     , title = "Translate"
     }
