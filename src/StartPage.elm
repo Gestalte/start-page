@@ -31,7 +31,7 @@ general =
             , ("https://mail.google.com", "Gmail")
             ]
         , [ ("https://www.youtube.com/", "Youtube")
-            , ("twitch.tv/", "Twitch")            
+            , ("https://twitch.tv/", "Twitch")            
             , ("https://calendar.google.com", "Calendar")
             , ("https://loot.co.za/", "Loot")
             , ("https://takealot.com/", "Takealot")
