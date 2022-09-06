@@ -61,13 +61,16 @@ programming =
 boards : LinkBlock
 boards = 
     { linkColumns = 
-        [[ ("https://boards.4channel.org/v/", "/v/")
-        , ("https://boards.4channel.org/vt/", "/vt/")
-        , ("https://boards.4channel.org/vg/", "/vg/")
-        , ("https://boards.4channel.org/vg/catalog#s=milsim", "/milsim/")
-        , ("https://boards.4channel.org/vg/catalog#s=agdg","/agdg/")
-        , ("https://boards.4channel.org/out/", "/out/")
-        ]]
+        [   [ ("https://boards.4channel.org/v/", "/v/")
+            , ("https://boards.4channel.org/vt/", "/vt/")
+            , ("https://boards.4channel.org/vg/", "/vg/")
+            , ("https://boards.4channel.org/out/", "/out/")
+            ]
+        ,   [ ("https://boards.4channel.org/vg/catalog#s=milsim", "/milsim/")
+            , ("https://boards.4channel.org/vg/catalog#s=agdg","/agdg/")
+            , ("https://boards.4channel.org/vg/catalog#s=eftg","/eftg/")
+            ]
+        ]
     , title = "Boards"
     }
 
