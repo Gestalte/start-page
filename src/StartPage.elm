@@ -88,9 +88,11 @@ translate =
 downloads : LinkBlock
 downloads =
     { linkColumns = 
-        [[ ("https://nyaa.si", "Nyaa")
+        [[("https://nyaa.si", "Nyaa")
+        , ("https://torlook.info", "torlook")
         , ("https://thepiratebay.org/index.html", "Piratebay")
         , ("https://za1lib.org/","Z-Library")
+        , ("https://torrentfreak.com/","TorrentFreak")
         ]]
     , title = "Downloads"
     }
