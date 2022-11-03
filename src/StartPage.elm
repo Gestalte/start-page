@@ -92,6 +92,7 @@ downloads =
         , ("https://torlook.info", "torlook")
         , ("https://thepiratebay.org/index.html", "Piratebay")
         , ("https://za1lib.org/","Z-Library")
+        , ("https://libgen.li/","libgen")
         , ("https://torrentfreak.com/","TorrentFreak")
         ]]
     , title = "Downloads"
