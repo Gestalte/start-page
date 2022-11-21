@@ -91,7 +91,7 @@ downloads =
         [[("https://nyaa.si", "Nyaa")
         , ("https://torlook.info", "torlook")
         , ("https://thepiratebay.org/index.html", "Piratebay")
-        , ("https://za1lib.org/","Z-Library")
+        , ("https://annas-archive.org/","Anna's Archive")
         , ("https://libgen.li/","libgen")
         , ("https://torrentfreak.com/","TorrentFreak")
         ]]
