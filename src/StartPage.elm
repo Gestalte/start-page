@@ -89,7 +89,7 @@ downloads : LinkBlock
 downloads =
     { linkColumns = 
         [[("https://nyaa.si", "Nyaa")
-        , ("https://torlook.info", "torlook")
+        , ("https://btdig.com/index.htm", "btdig")
         , ("https://thepiratebay.org/index.html", "Piratebay")
         , ("https://annas-archive.org/","Anna's Archive")
         , ("https://libgen.li/","libgen")
