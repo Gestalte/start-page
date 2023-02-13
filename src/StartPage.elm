@@ -207,6 +207,10 @@ view model =
             [ text (hour ++ ":" ++ minute ++ ":" ++ second ++ " " ++ year ++ "年" ++ toJapaneseMonthCounter month ++ day ++ "日") ]
         , div [ class "timeblocks" ] [ text (toJapaneseWeekday weekday) ]
         , div [ class "timeblocks" ] [ text (toJapaneseMonth month) ]
+        , br [][]
+        , div [ class "timeblocks" ] [ text ("年 -> nen") ]
+        , div [ class "timeblocks" ] [ text ("月 -> gatsu") ]
+        , div [ class "timeblocks" ] [ text ("日 -> nichi") ]
         ]
 
 type Msg
