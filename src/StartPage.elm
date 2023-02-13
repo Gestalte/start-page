@@ -69,6 +69,8 @@ boards =
         ,   [ ("https://boards.4channel.org/vg/catalog#s=milsim", "/milsim/")
             , ("https://boards.4channel.org/vg/catalog#s=agdg","/agdg/")
             , ("https://boards.4channel.org/vg/catalog#s=eftg","/eftg/")
+            , ("https://lainchan.org/%CE%BB/catalog.html","/λ/")
+            
             ]
         ]
     , title = "Boards"
@@ -87,13 +89,15 @@ translate =
 
 downloads : LinkBlock
 downloads =
-    { linkColumns = 
-        [[("https://nyaa.si", "Nyaa")
-        , ("https://btdig.com/index.htm", "btdig")
+    { linkColumns =         
+        [[("https://torrentfreak.com/","TorrentFreak")
         , ("https://thepiratebay.org/index.html", "Piratebay")
-        , ("https://annas-archive.org/","Anna's Archive")
+        , ("https://btdig.com/index.htm", "btdig")
+        , ("https://nyaa.si", "Nyaa")
+        ]
+    ,   [("https://annas-archive.org/","Anna's Archive")
         , ("https://libgen.li/","libgen")
-        , ("https://torrentfreak.com/","TorrentFreak")
+        , ("https://z-lib.is/","z-lib")
         ]]
     , title = "Downloads"
     }
