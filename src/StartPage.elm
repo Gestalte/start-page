@@ -42,8 +42,8 @@ programming =
     { linkColumns = 
         [   [ 
             ("https://github.com/Gestalte", "Github")
+            , ("https://learn.microsoft.com/en-us/docs/", "MS Learn Docs")            
             , ("https://community.bistudio.com/wiki/Category:Arma_3:_Scripting_Commands","BIKI")
-            , ("https://app.pluralsight.com/profile", "Pluralsight")
             , ("https://www.w3schools.com/default.asp", "W3 Schools")            
             ]
         ,   [("https://news.ycombinator.com/news", "Hacker News")
