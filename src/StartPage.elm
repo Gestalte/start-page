@@ -80,6 +80,7 @@ translate =
         , ("https://translate.google.com/?sl=ja&tl=en", "Google Translate")
         , ("https://conjugator.reverso.net/conjugation-japanese.html", "Reverso Conjugator")
         , ("https://jisho.org/", "Jisho Dictionary")
+        , ("https://www.tanoshiijapanese.com/dictionary/", "Tanoshii Japanese Dictionary")
         ]]
     , title = "Translate"
     }
