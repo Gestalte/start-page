@@ -45,6 +45,7 @@ programming =
             , ("https://community.bistudio.com/wiki/Category:Arma_3:_Scripting_Commands","BIKI")
             , ("https://www.w3schools.com/default.asp", "W3 Schools")            
             , ("https://learn.microsoft.com/en-us/docs/", "MS Learn Docs")            
+            , ("https://docs.avaloniaui.net/docs/welcome", "AvaloniaUI Docs")
             ]
         ,   [("https://news.ycombinator.com/news", "Hacker News")
             , ("https://lobste.rs/", "lobste.rs")
@@ -62,11 +63,12 @@ boards =
             , ("https://boards.4channel.org/vt/", "/vt/")
             , ("https://boards.4channel.org/vg/", "/vg/")
             , ("https://boards.4channel.org/out/", "/out/")
+            , ("https://lainchan.org/%CE%BB/catalog.html","/λ/")
             ]
         ,   [ ("https://boards.4channel.org/vg/catalog#s=milsim", "/milsim/")
             , ("https://boards.4channel.org/vg/catalog#s=agdg","/agdg/")
+            , ("https://boards.4channel.org/vm/catalog#s=tribes","/tribes/")
             , ("https://boards.4channel.org/vg/catalog#s=eftg","/eftg/")
-            , ("https://lainchan.org/%CE%BB/catalog.html","/λ/")
             
             ]
         ]
