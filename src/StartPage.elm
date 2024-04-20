@@ -94,6 +94,7 @@ downloads =
         [[("https://torrentfreak.com/","TorrentFreak")
         , ("https://thepiratebay.org/index.html", "Piratebay")
         , ("https://btdig.com/index.htm", "btdig")
+        , ("https://1337x.to", "1337x")
         , ("https://nyaa.si", "Nyaa")
         , ("https://annas-archive.org/","Anna's Archive")
         , ("https://libgen.li/","libgen")
