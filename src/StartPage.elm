@@ -40,14 +40,14 @@ general =
 programming : LinkBlock
 programming =
     { linkColumns = 
-        [   [ 
-            ("https://github.com/Gestalte", "Github")
-            , ("https://community.bistudio.com/wiki/Category:Arma_3:_Scripting_Commands","BIKI")
+        [   [("https://community.bistudio.com/wiki/Category:Arma_3:_Scripting_Commands","BIKI")
             , ("https://www.w3schools.com/default.asp", "W3 Schools")            
             , ("https://learn.microsoft.com/en-us/docs/", "MS Learn Docs")            
             , ("https://docs.avaloniaui.net/docs/welcome", "AvaloniaUI Docs")
+            , ("https://docs.racket-lang.org/", "Racket Docs")
             ]
-        ,   [("https://news.ycombinator.com/news", "Hacker News")
+        ,   [ ("https://github.com/Gestalte", "Github")
+            , ("https://news.ycombinator.com/news", "Hacker News")
             , ("https://lobste.rs/", "lobste.rs")
             , ("https://portal.azure.com/#home", "Azure")
             , ("https://console.cloud.google.com","Google Cloud")
