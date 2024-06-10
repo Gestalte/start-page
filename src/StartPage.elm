@@ -45,6 +45,7 @@ programming =
             , ("https://learn.microsoft.com/en-us/docs/", "MS Learn Docs")            
             , ("https://docs.avaloniaui.net/docs/welcome", "AvaloniaUI Docs")
             , ("https://docs.racket-lang.org/", "Racket Docs")
+            , ("https://getakka.net/articles/intro/what-is-akka.html", "Akka.net Docs")
             ]
         ,   [ ("https://github.com/Gestalte", "Github")
             , ("https://news.ycombinator.com/news", "Hacker News")
