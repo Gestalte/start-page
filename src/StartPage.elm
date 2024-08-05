@@ -25,11 +25,12 @@ general : LinkBlock
 general =
     { linkColumns = 
         [ [  ("https://holodex.net/", "HoloDex")
-            , ("https://twitch.tv/", "Twitch")            
             , ("https://takealot.com/", "Takealot")
             , ("https://loot.co.za/", "Loot")
+            , ("https://www.bing.com/chat?q=Microsoft%20Copilot&qs=ds&form=HPCODX", "Copilot Search")
             ]
         , [ ("https://www.youtube.com/", "Youtube")
+            , ("https://twitch.tv/", "Twitch")         
             , ("https://calendar.google.com", "Calendar")
             , ("https://mail.google.com", "Gmail")
             ]
@@ -60,19 +61,12 @@ programming =
 boards : LinkBlock
 boards = 
     { linkColumns = 
-        [   [ ("https://boards.4channel.org/v/", "/v/")
-            , ("https://boards.4channel.org/vt/", "/vt/")
-            , ("https://boards.4channel.org/vg/", "/vg/")
-            , ("https://boards.4channel.org/out/", "/out/")
-            , ("https://lainchan.org/%CE%BB/catalog.html","/λ/")
-            ]
-        ,   [ ("https://boards.4channel.org/vg/catalog#s=milsim", "/milsim/")
-            , ("https://boards.4channel.org/vg/catalog#s=agdg","/agdg/")
-            , ("https://boards.4channel.org/vm/catalog#s=tribes","/tribes/")
-            , ("https://boards.4channel.org/vg/catalog#s=eftg","/eftg/")
-            
-            ]
-        ]
+        [[("https://boards.4channel.org/v/", "/v/")
+        , ("https://boards.4channel.org/vt/", "/vt/")
+        , ("https://boards.4channel.org/vg/", "/vg/")
+        , ("https://boards.4channel.org/out/", "/out/")
+        , ("https://lainchan.org/%CE%BB/catalog.html","/λ/")
+        ]]
     , title = "Boards"
     }
 
