@@ -27,6 +27,7 @@ general =
         [ [  ("https://holodex.net/", "HoloDex")
             , ("https://takealot.com/", "Takealot")
             , ("https://loot.co.za/", "Loot")
+            , ("https://www.websters1913.com/", "Websters 1913")
             , ("https://www.bing.com/chat?q=Microsoft%20Copilot&qs=ds&form=HPCODX", "Copilot Search")
             ]
         , [ ("https://www.youtube.com/", "Youtube")
