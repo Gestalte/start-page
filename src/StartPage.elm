@@ -54,6 +54,7 @@ programming =
             , ("https://lobste.rs/", "lobste.rs")
             , ("https://portal.azure.com/#home", "Azure")
             , ("https://console.cloud.google.com","Google Cloud")
+            , ("https://www.alldatasheet.com/", "All Datasheet")
             ]
         ]
     , title = "Programming"
