@@ -103,7 +103,7 @@ downloads =
           , ( "https://1337x.to", "1337x" )
           , ( "https://nyaa.si", "Nyaa" )
           ]
-        , [ ( "https://z-lib.gs/", "z-lib" )
+        , [ ( "https://z-library.sk/", "z-lib" )
           , ( "https://annas-archive.org/", "Anna's Archive" )
           , ( "https://www.dbooks.org/", "dBooks Library" )
           , ( "https://audiobookbay.lu", "AudiobookBay" )
