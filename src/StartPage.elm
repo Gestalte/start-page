@@ -70,6 +70,7 @@ boards =
     { linkColumns =
         [ [ ( "https://boards.4channel.org/v/", "/v/" )
           , ( "https://boards.4channel.org/vt/", "/vt/" )
+          , ( "https://8chan.moe/vyt/", "/vyt/" )
           , ( "https://boards.4channel.org/vg/", "/vg/" )
           , ( "https://boards.4channel.org/out/", "/out/" )
           , ( "https://lainchan.org/%CE%BB/catalog.html", "/λ/" )
