@@ -29,14 +29,16 @@ general =
     { linkColumns =
         [ [ ( "https://takealot.com/", "Takealot" )
           , ( "https://loot.co.za/", "Loot" )
+          , ( "https://amazon.co.za/", "Amazon ZA" )
+          , ( "https://amazon.com/", "Amazon" )
           , ( "https://www.websters1913.com/", "Websters 1913" )
-          , ( "https://www.bing.com/chat?q=Microsoft%20Copilot&qs=ds&form=HPCODX", "Copilot Search" )
-          , ( "https://www.perplexity.ai/", "perplexity AI" )
           ]
         , [ ( "https://www.youtube.com/", "Youtube" )
           , ( "https://twitch.tv/", "Twitch" )
           , ( "https://calendar.google.com", "Calendar" )
           , ( "https://mail.google.com", "Gmail" )
+          , ( "https://www.bing.com/chat?q=Microsoft%20Copilot&qs=ds&form=HPCODX", "Copilot Search" )
+          , ( "https://www.perplexity.ai/", "perplexity AI" )
           ]
         ]
     , title = "General"
@@ -46,19 +48,17 @@ general =
 programming : LinkBlock
 programming =
     { linkColumns =
-        [ [ ( "https://community.bistudio.com/wiki/Category:Arma_3:_Scripting_Commands", "BIKI" )
-          , ( "https://www.w3schools.com/default.asp", "W3 Schools" )
+        [ [ ( "https://www.w3schools.com/default.asp", "W3 Schools" )
           , ( "https://learn.microsoft.com/en-us/docs/", "MS Learn Docs" )
           , ( "https://docs.avaloniaui.net/docs/welcome", "AvaloniaUI Docs" )
           , ( "https://docs.racket-lang.org/", "Racket Docs" )
           , ( "https://getakka.net/articles/intro/what-is-akka.html", "Akka.net Docs" )
+          , ( "https://duckdb.org/docs/2.0/", "DuckDB Docs" )
           ]
         , [ ( "https://github.com/Gestalte", "Github" )
           , ( "https://news.ycombinator.com/news", "Hacker News" )
           , ( "https://lobste.rs/", "lobste.rs" )
           , ( "https://portal.azure.com/#home", "Azure" )
-          , ( "https://console.cloud.google.com", "Google Cloud" )
-          , ( "https://www.alldatasheet.com/", "All Datasheet" )
           ]
         ]
     , title = "Programming"
